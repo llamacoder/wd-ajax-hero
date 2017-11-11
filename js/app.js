@@ -140,7 +140,7 @@
       if ($xhr.status !== 200) {
         // The served an unsuccessful status code.
         alert("Done, but status not 200!");
-        return;  // little change
+        return;  // little change again
       }
 
       //  call was successful, so parse the movie data and update the UI
