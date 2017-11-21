@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  const movies = [];
+  var movies = [];
 
   const renderMovies = function() {
     $('#listings').empty();
@@ -111,6 +111,7 @@
       alert("Sorry - couldn't find that movie!  Try again.")
       return;
     }
+    movies = [];
     let newMovie = {};
     newMovie["id"] = data["imdbID"];
     newMovie["title"] = data["Title"];
